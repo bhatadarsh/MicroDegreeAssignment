@@ -1,0 +1,76 @@
+✅ T1 – Create IAM User with Console & CLI Access
+
+Category: IAM (Users, Groups, Roles, Policies)
+Difficulty: Easy
+Estimated Time: 20–30 mins
+
+Why This Task Matters:
+Secure and manage cloud access effectively using IAM best practices.
+
+Skills Covered:
+Create IAM users and groups
+Configure console and programmatic access
+Implement least privilege principle
+
+Step-by-Step Guide:
+Create IAM user with both console and CLI/API access.
+Attach policy with minimal required permissions.
+Test login and CLI access with new credentials.
+
+✅ T2 – Launch an EC2 Instance and Connect via SSH
+
+Category: EC2 Basics
+Difficulty: Easy
+Estimated Time: 20–30 mins
+
+Why This Task Matters:
+Build knowledge for provisioning and managing compute instances securely.
+
+Skills Covered:
+Launch EC2 instance with appropriate security groups
+Connect via SSH to instance
+Install and configure basic software
+
+Step-by-Step Guide:
+Launch Amazon Linux 2 t2.micro
+Open SSH port on security group
+Connect and install simple HTTP server
+
+
+✅ T3 – Setup Auto Scaling Group with Target Tracking
+
+Category: Auto Scaling
+Difficulty: Medium
+Estimated Time: 30 mins
+Why This Task Matters:
+Understand how to maintain application availability and optimize cost.
+
+Skills Covered:
+Create launch template and ASG
+Setup ALB with target groups
+Configure CPU-based scaling policy
+
+Step-by-Step Guide:
+Create Launch Template with user-data script
+Setup Application Load Balancer and target group
+Create ASG and attach target group and policy
+Generate load and observe scaling behavior
+
+✅ T4 – Configure S3 Cross-Region Replication
+
+Category: S3 Advanced
+Difficulty: Medium
+Estimated Time: 25–35 mins
+
+Why This Task Matters:
+Ensure data durability and availability in multi-region architectures.
+
+Skills Covered:
+Enable bucket versioning
+Setup replication with IAM role
+Test replication and verify bucket contents
+
+Step-by-Step Guide:
+Create two buckets in different regions with versioning
+Configure replication rule and required permissions
+Upload files and verify replication
