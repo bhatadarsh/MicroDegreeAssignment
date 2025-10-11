@@ -1,0 +1,60 @@
+✅
+ T5 – Create Cross-Account IAM Role and Test Access 
+Category: Advanced IAM 
+Difficulty: Medium 
+Estimated Time: 30 mins 
+Why This Task Matters: 
+Manage cross-account permissions securely and efficiently. 
+Skills Covered: 
+Create role trusted by another AWS account 
+Attach appropriate permissions 
+Test role assumption via CLI or console 
+Step-by-Step Guide: 
+Create role with external account trust relationship 
+Assign policy (e.g., read-only S3 access) 
+Assume role from other account and test access 
+✅
+ T6 – Create Custom CloudWatch Metric and Dashboard 
+Category: CloudWatch Advanced 
+Difficulty: Medium 
+Estimated Time: 30 mins 
+Why This Task Matters: 
+Build custom metrics and visualizations for detailed monitoring. 
+Skills Covered: 
+Define custom CloudWatch metrics 
+Create dashboards 
+Setup alarm notifications (SNS) 
+Step-by-Step Guide: 
+Send custom metric data from CLI or application 
+Create CloudWatch dashboard with the metric 
+Attach alarm and subscribe to notification topic 
+✅
+ T7 – Configure Route 53 Latency-Based Routing 
+Category: Route 53 Advanced 
+Difficulty: Medium 
+Estimated Time: 25–30 mins 
+Why This Task Matters: 
+Deliver better user experience by directing traffic to optimal endpoints. 
+Skills Covered: 
+Setup latency-based DNS routing 
+Create health checks and configure failover 
+Test DNS resolution from different locations 
+Step-by-Step Guide: 
+Create latency-based record sets in Route 53 
+Setup health checks for endpoints 
+Validate routing behavior on traffic shifts 
+✅
+ T8 – Setup VPC Peering Between Two VPCs 
+Category: VPC Networking 
+Difficulty: Medium 
+Estimated Time: 30 mins 
+Why This Task Matters: 
+Learn secure, scalable connectivity between isolated networks. 
+Skills Covered: 
+Create VPC peering connection 
+Modify route tables to enable traffic 
+Test connectivity between VPCs 
+Step-by-Step Guide: 
+Request VPC peering from VPC A to B 
+Update route tables and security groups 
+Verify communication via ping or other tools 
