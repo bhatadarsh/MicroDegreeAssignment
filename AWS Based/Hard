@@ -1,0 +1,60 @@
+✅
+ T9 – Enable CloudTrail with S3 Bucket for Auditing 
+Category: Security & Auditing 
+Difficulty: Easy 
+Estimated Time: 20–30 mins 
+Why This Task Matters: 
+Track API activity for compliance and troubleshooting. 
+Skills Covered: 
+Create CloudTrail trail 
+Enable S3 bucket logging 
+Verify event log delivery 
+Step-by-Step Guide: 
+Enable CloudTrail in the AWS Console 
+Choose/create encrypted S3 bucket for logs 
+Upload or perform actions and verify logs 
+✅
+ T10 – Launch RDS Database with Backup and Security Groups 
+Category: RDS Basics 
+Difficulty: Easy 
+Estimated Time: 25–30 mins 
+Why This Task Matters: 
+Provision secure and highly available databases. 
+Skills Covered: 
+Launch RDS MySQL/PostgreSQL instance 
+Configure security group for access 
+Setup automated backups 
+Step-by-Step Guide: 
+Launch RDS with default settings and backup enabled 
+Create security groups with restricted access 
+Connect to database and test accessibility 
+✅
+ T11 – Automate EC2 Instance Provisioning via Terraform 
+Category: Terraform Infrastructure 
+Difficulty: Medium 
+Estimated Time: 30 mins 
+Why This Task Matters: 
+Apply infrastructure as code to enforce consistency and automation. 
+Skills Covered: 
+Write Terraform config for EC2 with security group 
+Initialize, plan, and apply Terraform scripts 
+Review Terraform state and cleanup 
+Step-by-Step Guide: 
+Write main.tf file with provider and EC2 resource 
+Run terraform init, terraform plan, and terraform apply 
+Verify instance is running, then terraform destroy 
+✅
+ T12 – Setup S3 Static Website Hosting with CloudFront 
+Category: S3 + CloudFront 
+Difficulty: Medium 
+Estimated Time: 30 mins 
+Why This Task Matters: 
+Host and distribute static websites with global CDN experience. 
+Skills Covered: 
+Enable static website hosting on S3 
+Setup CloudFront distribution with origin access identity 
+Setup Route 53 to point to CloudFront 
+Step-by-Step Guide: 
+Upload website files to S3 and enable static hosting 
+Create CloudFront distribution with S3 as origin, restrict bucket access 
+Create Route 53 alias DNS record to CloudFront distribution 
