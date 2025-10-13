@@ -1,0 +1,122 @@
+✅
+ T1 – Git Basics: Clone, Commit, Branch, Merge 
+Category: Git Basics 
+Difficulty: Easy 
+Estimated Time: 20–30 mins 
+Why This Task Matters: 
+Master source code version control and collaboration workflows. 
+Skills Covered: 
+Clone remote repository 
+Create and switch branches 
+Commit and push changes 
+Simulate and resolve merge conflicts 
+Step-by-Step: 
+git clone https://github.com/<user>/<repo>.git 
+git checkout -b feature/my-change 
+Modify files, git add . && git commit -m "feat: example" 
+Push branch, open PR in GitHub 
+Create merge conflict by editing same file in main and feature branches 
+Merge and resolve conflict: 
+bash 
+git checkout feature/my-change   
+git merge main   
+# Resolve conflicts manually, then:   
+git add <file>   
+git commit --no-edit   
+✅
+ T2 – Jenkins Pipelines: Create Declarative Jenkinsfile 
+Category: CI/CD Pipelines 
+Difficulty: Medium 
+Estimated Time: 45-60 mins 
+Why This Task Matters: 
+Automate build-test-release workflows efficiently. 
+Skills Covered: 
+Write Jenkinsfile with stages (checkout, build, test) 
+Set multibranch pipeline or webhook integration 
+Archive build artifacts 
+Step-by-Step: 
+Write Jenkinsfile: 
+groovy 
+pipeline {   
+agent any   
+stages {   
+stage('Checkout') { steps { checkout scm } }   
+stage('Build') { steps { sh 'mvn clean package' } }   
+stage('Test') { steps { sh 'mvn test' } }   
+stage('Archive') { steps { archiveArtifacts artifacts: '**/target/*.jar' } }   
+}   
+}   
+Setup Jenkins multibranch pipeline linked to GitHub repo. 
+Configure webhook in GitHub to trigger builds. 
+Run pipeline and monitor logs and artifacts. 
+✅
+ T3 – Docker: Build and Deploy a Containerized Java App 
+Category: Containerization 
+Difficulty: Easy 
+Estimated Time: 30-40 mins 
+Why This Task Matters: 
+Learn container image creation and deployment basics for Java applications. 
+Skills Covered: 
+Write Dockerfile for Maven-built app 
+Build and run Docker container 
+Manage container lifecycle 
+Step-by-Step: 
+Dockerfile example: 
+text 
+FROM maven:3.8.4-openjdk-11 AS build   
+WORKDIR /app   
+COPY . .   
+RUN mvn clean package   
+FROM openjdk:11-jre-slim   
+COPY --from=build /app/target/app.jar /app.jar   
+ENTRYPOINT ["java", "-jar", "/app.jar"]   
+Build Docker image: 
+bash 
+docker build -t java-app .   
+Run container: 
+bash 
+docker run -d -p 8080:8080 --name java-app-instance java-app   
+Stop and remove container: 
+bash 
+docker stop java-app-instance && docker rm java-app-instance   
+✅
+ T4 – Kubernetes: Deploy Maven-built App as Pod and Service 
+Category: Kubernetes Fundamentals 
+Difficulty: Medium 
+Estimated Time: 45-60 mins 
+Why This Task Matters: 
+Understand deployment and exposure of apps on Kubernetes clusters. 
+Skills Covered: 
+Write pod and service YAML definitions 
+Deploy and expose application 
+Troubleshoot pod status 
+Step-by-Step: 
+Pod manifest (app-pod.yaml): 
+text 
+apiVersion: v1   
+kind: Pod   
+metadata:   
+name: java-app-pod   
+labels:   
+app: java-app   
+spec:   
+containers:   - name: java-app   
+image: java-app:latest   
+ports:   
+- containerPort: 8080   
+Deploy pod: kubectl apply -f app-pod.yaml 
+Service manifest (app-service.yaml): 
+text 
+apiVersion: v1   
+kind: Service   
+metadata:   
+name: java-app-service   
+spec:   
+selector:   
+app: java-app   
+ports:   - protocol: TCP   
+port: 80   
+targetPort: 8080   
+type: ClusterIP   
+Deploy service: kubectl apply -f app-service.yaml 
+Validate pod and service: kubectl get pods,svc 
