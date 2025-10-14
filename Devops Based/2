@@ -1,0 +1,74 @@
+✅
+ T5 – Terraform Basics: Provision VM and Security Group 
+Category: Terraform Basics 
+Difficulty: Medium 
+Estimated Time: 30-40 mins 
+Why This Task Matters: 
+Automate infrastructure provisioning with Terraform’s IaC approach. 
+Skills Covered: 
+Write Terraform main.tf for VM and SG 
+Initialize, plan, and apply configurations 
+Manage Terraform state and cleanup 
+Step-by-Step: 
+Write main.tf with provider, EC2 instance, and security group. 
+Run: 
+bash 
+terraform init   
+terraform plan   
+terraform apply   
+Verify EC2 instance running in console. 
+Destroy resources: terraform destroy 
+✅
+ T6 – Ansible: Install Apache and Manage Service via Playbook 
+Category: Configuration Management 
+Difficulty: Medium 
+Estimated Time: 30-40 mins 
+Why This Task Matters: 
+Streamline configuration by automating repetitive tasks. 
+Skills Covered: 
+Write and run YAML playbook 
+Package installation and service control 
+Use inventories and ad-hoc commands 
+Step-by-Step: 
+Create inventory file hosts.ini. 
+Write playbook apache-install.yml: 
+text - hosts: webservers   
+become: yes   
+tasks:   - name: Install apache2   
+apt: name=apache2 state=latest update_cache=yes   - name: Start apache2   
+service: name=apache2 state=started enabled=yes   
+Run playbook: ansible-playbook -i hosts.ini apache-install.yml 
+Verify service is running remotely. 
+✅
+ T7 – Jenkins: Configure Pipeline with Maven Build and Docker 
+Push 
+Category: CI/CD Pipelines 
+Difficulty: Medium 
+Estimated Time: 45-60 mins 
+Why This Task Matters: 
+Combine build automation with container publishing for deployment pipelines. 
+Skills Covered: 
+Setup build and test stages in Jenkinsfile 
+Integrate Maven build and Docker publish 
+Manage Jenkins credentials for Docker Hub 
+Step-by-Step: 
+Write Jenkinsfile with stages: checkout, build (Maven), docker build, docker push. 
+Configure Jenkins to authenticate Docker registry. 
+Run pipeline and monitor successful container push. 
+✅
+ T8 – Kubernetes: Deploy with Helm Chart 
+Category: Kubernetes Advanced 
+Difficulty: Medium 
+Estimated Time: 40-50 mins 
+Why This Task Matters: 
+Simplify Kubernetes app deployment with Helm charts. 
+Skills Covered: 
+Package app as Helm chart 
+Manage releases with Helm CLI 
+Override values for environment-specific configs 
+Step-by-Step: 
+Create Helm chart scaffold: helm create java-app 
+Customize templates for container image and port. 
+Deploy with: helm install my-java-app ./java-app 
+Upgrade release by changing values and running helm upgrade. 
+Uninstall with helm uninstall my-java-app. 
