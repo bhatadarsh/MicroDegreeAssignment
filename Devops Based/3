@@ -1,0 +1,63 @@
+✅
+ T9 – Git: Create Pull Request Workflow with Reviews 
+Category: Git Collaboration 
+Difficulty: Easy 
+Estimated Time: 20-30 mins 
+Why This Task Matters: 
+Learn collaboration best practices using pull requests and reviews. 
+Skills Covered: 
+Create feature branch and push 
+Open and manage PR on GitHub 
+Add reviewers and resolve comments 
+Step-by-Step: 
+Clone repo and create branch: git checkout -b feature-xyz 
+Commit and push to origin. 
+Open PR on GitHub and request review. 
+Address reviewer comments and merge. 
+✅
+ T10 – Docker Compose: Multi-Service Application Deployment 
+Category: Container Orchestration 
+Difficulty: Medium 
+Estimated Time: 30-40 mins 
+Why This Task Matters: 
+Deploy interdependent containers efficiently. 
+Skills Covered: 
+Write docker-compose.yml with multiple services 
+Start, stop, and monitor containers 
+Link containers for networking 
+Step-by-Step: 
+Write docker-compose.yml with app and db services. 
+Run docker-compose up -d to start containers. 
+Verify containers running: docker-compose ps 
+Stop containers: docker-compose down. 
+✅
+ T11 – Jenkins: Build and Deploy Docker Container from Pipeline 
+Category: CI/CD and Containerization 
+Difficulty: Medium 
+Estimated Time: 40-50 mins 
+Why This Task Matters: 
+Automate Docker container lifecycle in Jenkins pipeline. 
+Skills Covered: 
+Write Jenkinsfile with Docker build and push steps 
+Authenticate Jenkins with Docker Hub 
+Trigger pipeline on source push 
+Step-by-Step: 
+Jenkinsfile: checkout code, build Docker image, push image to registry. 
+Configure credentials and secrets for Docker Hub in Jenkins. 
+Run pipeline and verify pushing results. 
+✅
+ T12 – Ansible: Role-Based Automation for Web Server 
+Category: Configuration Management 
+Difficulty: Medium 
+Estimated Time: 30-40 mins 
+Why This Task Matters: 
+Encourage modular, reusable playbooks with roles. 
+Skills Covered: 
+Generate Ansible role skeleton 
+Define tasks, templates, handlers in role 
+Use roles in playbook 
+Step-by-Step: 
+Create role scaffold: ansible-galaxy init webserver 
+Add Apache install task to webserver/tasks/main.yml. 
+Write site.yml calling webserver role. 
+Execute playbook with inventory. 
