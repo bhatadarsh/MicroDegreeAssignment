@@ -1,0 +1,10 @@
+Create an IAM user with only the permissions required to perform the below activities - screenshot of policies attached (to be shared)
+Login using this IAM credentials and perform the below activities
+Create a custom VPC with 2 Public and 2 Private subnets
+Create an S3 bucket and upload the image in S3 bucket 
+Launch and EC2 instance in the public subnet
+Create a Db server in the Private subnet Establish the connectivity between EC2 and DB server - screenshot of successful connection (to be shared)
+Create and mount an EFS volume and create an index.html page and embed the image in S3 bucket in the index.html page - EC2 IP (to be shared)
+Create a highly available and scalable EC2 server, mounting EFS volume to all the EC2 instances (min 2) - load balancing & autoscaling
+Serve the image in the index.html file through the load balancer DNS - loadbalancer DNS (to be shared)
+Deliver the web page over Route53 DNS - optional (to be shared)
